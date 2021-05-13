@@ -3,10 +3,10 @@
 
   @include tablets {
     width: 100%;
-    padding: 0 35px;
+    padding: 0 20px;
   }
 
   @include phones {
-    padding: 0 16px;
+    padding: 0 14px;
   }
 }

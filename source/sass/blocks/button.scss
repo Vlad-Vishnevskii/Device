@@ -1,14 +1,47 @@
 .button {
-  padding: 10px 20px;
-  background-color: transparent;
-  border: 1px solid $white;
+  padding: 10px 0;
   border-radius: 5px;
   font-family: $base-font;
-  color: $white;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: $white;
+  outline: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.button_white-transparent {
+  border: 1px solid $white;
+  background-color: transparent;
+}
+
+.button_blue-fill {
+  background-color: $blue;
+  border: none;
+}
+
+.button__desktop-tablet-visible {
+  display: inline;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.button__mobile-visible {
+  display: none;
+
+  @include phones {
+    display: inline;
+  }
 }
