@@ -1,0 +1,273 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 14px;
+
+  @include tablets {
+    padding-top: 9px;
+  }
+}
+
+.footer__top {
+  width: 1432px;
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+
+  @include desktop-middle {
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include tablets {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 21px;
+  }
+
+  @include phones {
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+}
+
+.footer__left {
+  padding-top: 11px;
+  padding-left: 5px;
+  margin-right: 209px;
+
+  @include desktop-middle {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 22px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $grey-opacity-low;
+  }
+
+  @include phones {
+    flex-direction: column;
+    padding-bottom: 51px;
+  }
+}
+
+.footer__social {
+  margin-top: 52px;
+
+  @include tablets {
+    margin-top: 0;
+  }
+
+  @include phones {
+    margin-top: 31px;
+  }
+}
+
+.footer__center {
+  width: 380px;
+  margin-right: 276px;
+
+  @include desktop-middle {
+    margin-right: 0;
+    width: initial;
+  }
+
+  @include tablets {
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-right: 122px;
+  }
+
+  @include phones {
+    width: 100%;
+    margin-right: 0;
+    padding-left: 14px;
+    padding-top: 14px;
+    padding-right: 17px;
+    border-bottom: 1px solid $grey-opacity-low;
+  }
+}
+
+.footer__right {
+  @include tablets {
+    padding-top: 25px;
+    padding-right: 25px;
+  }
+
+  @include phones {
+    width: 100%;
+    padding-top: 14px;
+    padding-left: 15px;
+    padding-right: 17px;
+  }
+}
+
+.footer__navigation-list,
+.footer_contacts-list {
+  list-style: none;
+  padding: 0;
+
+  @include phones {
+    margin-top: 34px;
+    margin-bottom: 26px;
+    width: 250px;
+  }
+}
+
+.footer__navigation-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+
+  @include desktop-middle {
+    flex-wrap: nowrap;
+    height: initial;
+  }
+}
+
+.footer__navigation-list li {
+  margin-right: 80px;
+
+  @include desktop-middle {
+    margin-right: 30px;
+  }
+}
+
+.footer__navigation-list a,
+.footer_contacts-list li {
+  text-decoration: none;
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $special-black;
+  opacity: 0.5;
+  letter-spacing: 1.5px;
+}
+
+.footer h2 {
+  font-family: $base-font;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: $special-black;
+  margin-bottom: 25px;
+
+  @include phones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__bottom {
+  border-top: 1px solid $grey-opacity-low;
+  padding-top: 14px;
+
+  @include tablets {
+    padding-top: 20px;
+  }
+
+  @include phones {
+    padding-top: 29px;
+  }
+}
+
+.footer__bottom-wrapper {
+  display: flex;
+  width: 1432px;
+  position: relative;
+
+  @include desktop-middle {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+  }
+
+  @include phones {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+  }
+}
+
+.footer__bottom span,
+.footer__copyright_mobile {
+  font-family: $alternative-font;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $special-black;
+  opacity: 0.5;
+}
+
+.footer__rights {
+  margin-right: 66px;
+
+  @include desktop-middle {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.footer__copyright {
+  margin-right: 156px;
+
+  @include desktop-middle {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.footer__copyright_mobile {
+  display: none;
+
+  @include tablets {
+    display: block;
+    letter-spacing: 1.2px;
+  }
+
+  @include phones {
+    margin-top: 26px;
+  }
+}
+
+.footer__confidential {
+  margin-right: 357px;
+
+  @include desktop-middle {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    letter-spacing: -1px;
+  }
+
+  @include phones {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+}

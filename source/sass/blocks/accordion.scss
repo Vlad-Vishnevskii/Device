@@ -1,0 +1,37 @@
+.accordion__trigger {
+  display: none;
+
+  @include phones {
+    display: block;
+  }
+}
+
+.accordion__trigger_on {
+  @include phones {
+    display: none;
+  }
+}
+
+.accordion__content {
+  @include phones {
+    display: none;
+  }
+}
+
+.accordion__input:checked ~ .accordion__content {
+  @include phones {
+    display: block;
+  }
+}
+
+.accordion__input:checked + h2 .accordion__trigger_on {
+  @include phones {
+    display: block;
+  }
+}
+
+.accordion__input:checked + h2 .accordion__trigger_off {
+  @include phones {
+    display: none;
+  }
+}

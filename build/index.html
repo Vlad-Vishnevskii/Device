@@ -14,8 +14,8 @@
     <div class="header__wrapper container">
       <div class="header__top">
         <picture>
-           <!-- 1х: 202px; 2x: 404px -->
-           <source srcset="/img/header-logo-mobile@1x.png" media="(max-width: 767px)">
+          <!-- 1х: 202px; 2x: 404px -->
+          <source srcset="/img/header-logo-mobile@1x.png" media="(max-width: 767px)">
           <img class="header__logo" src="img/header-logo-desktop_and_tablet@1x.png" alt="Smart Device" width="202" height="52">
         </picture>
         <div class="header__contacts">
@@ -65,7 +65,82 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__left">
+        <img class="footer__logo" src="/img/footer-logo@1x.png" alt="Service Device" width="216" height="52">
+        <span class="footer__copyright_mobile">1999-2018 SD Service Devices</span>
+        <ul class="footer__social social-icons">
+          <li>
+            <svg width="27" height="27">
+              <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="26" height="26">
+              <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="26" height="26">
+              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__center accordion">
+        <input class="accordion__input visually-hidden" type="checkbox" id="accordion-1">
+        <h2>
+          Разделы сайта
+          <label class="accordion__trigger" for="accordion-1">
+            <svg class="accordion__trigger_off" width="16" height="16">
+              <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
+            </svg>
+            <svg class="accordion__trigger_on" width="16" height="2">
+              <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
+            </svg>
+          </label>
+        </h2>
+        <ul class="footer__navigation-list accordion__content">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Продукты</a></li>
+          <li><a href="#">Производство печатных плат</a></li>
+          <li><a href="#">Монтаж печатных плат</a></li>
+          <li><a href="#">Комплектующие</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <input class="accordion__input visually-hidden" type="checkbox" id="accordion-2">
+        <h2>
+          Наш офис
+          <label class="accordion__trigger" for="accordion-2">
+            <svg class="accordion__trigger_off" width="16" height="16">
+              <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
+            </svg>
+            <svg class="accordion__trigger_on" width="16" height="2">
+              <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
+            </svg>
+          </label>
+        </h2>
+        <ul class="footer_contacts-list accordion__content">
+          <li>г. Мытищи, Олимпийский проспект, д.10</li>
+          <li>+7 (495) 589-40-50</li>
+          <li>+7 (925) 003-87-67</li>
+          <li>+7 (926) 926-080-79</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-wrapper container">
+        <span class="footer__rights">Все права защищены</span>
+        <span class="footer__copyright">1999-2018 SD Service Devices</span>
+        <span class="footer__confidential">Условия конфиденциальности</span>
+        <span class="footer__developer">Developed by wow studio </span>
+      </div>
+    </div>
 
   </footer>
 </body>
