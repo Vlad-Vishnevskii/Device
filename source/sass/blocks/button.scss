@@ -25,6 +25,13 @@
   background-color: transparent;
 }
 
+.button_blue-transparent {
+  color: $blue;
+  border: 1px solid $blue;
+  background-color: transparent;
+}
+
+
 .button_blue-fill {
   background-color: $blue;
   border: none;

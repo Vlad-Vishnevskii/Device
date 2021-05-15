@@ -1,0 +1,189 @@
+.advantages {
+  padding-top: 97px;
+  padding-bottom: 55px;
+
+  @include tablets {
+    padding-top: 39px;
+    padding-bottom: 11px;
+  }
+
+  @include phones {
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+}
+
+.advantages__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+
+  @include desktop-middle {
+    justify-content: center;
+  }
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__list::before {
+  position: absolute;
+  top: -65px;
+  left: -172px;
+  content: "";
+  background-image: url("/img/small-polygon-grey@1x.png");
+  width: 298px;
+  height: 298px;
+
+  @include desktop-middle {
+    left: 15px;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.advantages__list::after {
+  position: absolute;
+  bottom: 50px;
+  right: -343px;
+  content: "";
+  background-image: url("/img/small-polygon-grey@1x.png");
+  width: 298px;
+  height: 298px;
+  transform: rotate(180deg);
+
+  @include desktop-middle {
+    right: 15px;
+    bottom: -80px;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.advantages__item {
+  width: 573px;
+  min-height: 299px;
+  padding-top: 35px;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+  border: 1px solid $grey-light;
+  background-color: $white;
+  border-left: 3px solid $blue;
+  cursor: pointer;
+  z-index: 5;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  @include desktop-middle {
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  @include tablets {
+    width: 345px;
+    min-height: 231px;
+    padding-top: 21px;
+    padding-left: 24px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+  }
+
+  @include phones {
+    padding-bottom: 10px;
+    margin-bottom: 19px;
+    margin-right: 0;
+    width: 290px;
+  }
+}
+
+.advantages__item:nth-of-type(2n) {
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.advantages__item:hover h2,
+.advantages__item:hover p {
+  color: $white;
+}
+
+.advantages__item:hover .advantages__icon {
+  stroke: $white;
+}
+
+.advantages__item h2 {
+  font-family: $base-font;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: $blue;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+
+  @include tablets {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    margin-top: 11px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.advantages__item:nth-of-type(4) h2 {
+  @include phones {
+    margin-top: 7px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__item p {
+  width: 491px;
+  font-family: $alternative-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey;
+  margin-top: 15px;
+  letter-spacing: 1px;
+
+  @include desktop-middle {
+    width: 100%;
+  }
+
+  @include tablets {
+    margin-top: 7px;
+    width: 301px;
+  }
+
+  @include phones {
+    width: 245px;
+  }
+}
+
+.advantages__item:nth-of-type(2) p {
+  @include phones {
+    width: 255px;
+  }
+}
+
+.advantages__item:nth-of-type(3) p {
+  @include tablets {
+    margin-top: 14px;
+  }
+}
