@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: flex-start;
+  padding-bottom: 90px;
 
   @include desktop-middle {
     padding-left: 65px;
@@ -12,11 +13,13 @@
   @include tablets {
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 70px;
   }
 
   @include phones {
     padding-left: 17px;
     padding-right: 15px;
+    padding-bottom: 65px;
   }
 }
 

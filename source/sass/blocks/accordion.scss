@@ -6,7 +6,7 @@
   }
 }
 
-.accordion__trigger_on {
+.accordion__on {
   @include phones {
     display: none;
   }
@@ -24,13 +24,13 @@
   }
 }
 
-.accordion__input:checked + h2 .accordion__trigger_on {
+.accordion__input:checked + h2 .accordion__on {
   @include phones {
     display: block;
   }
 }
 
-.accordion__input:checked + h2 .accordion__trigger_off {
+.accordion__input:checked + h2 .accordion__off {
   @include phones {
     display: none;
   }

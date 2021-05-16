@@ -1,0 +1,174 @@
+.products {
+  background-color: $special-black;
+  color: $white;
+  padding-top: 58px;
+  padding-bottom: 74px;
+
+  @include desktop-middle {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include tablets {
+    padding-top: 23px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 19px;
+  }
+
+  @include phones {
+    padding-top: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 22px;
+  }
+}
+
+.products__wrapper {
+  @include tablets {
+    padding: 0;
+  }
+}
+
+.products h2 {
+  font-family: $base-font;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  letter-spacing: -2px;
+  margin-bottom: 52px;
+
+  @include desktop-middle {
+    text-align: center;
+  }
+
+  @include tablets {
+    width: 613px;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @include phones {
+    width: 280px;
+    font-size: 28px;
+    line-height: 39px;
+    padding-left: 8px;
+    margin-bottom: 42px;
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+
+  @include desktop-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.products a {
+  position: relative;
+  display: block;
+  width: 370px;
+  height: 620px;
+  padding-top: 53px;
+  padding-left: 43px;
+  color: $white;
+  text-decoration: none;
+  margin-bottom: 40px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $blue;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+  }
+
+  @include desktop-middle {
+    width: 715px;
+    height: 256px;
+  }
+
+  @include tablets {
+    padding-top: 40px;
+    margin-bottom: 45px;
+  }
+
+  @include phones {
+    width: 290px;
+    height: 256px;
+    padding-top: 21px;
+    padding-left: 34px;
+    margin-bottom: 29px;
+  }
+}
+
+.products__item:nth-of-type(1) a {
+  background-image: url("/img/manufacture-desktop@1x.png");
+
+  @include desktop-middle {
+    background-image: url("/img/manufacture-tablet@1x.png");
+  }
+
+  @include phones {
+    background-image: url("/img/manufacture-mobile@1x.png");
+  }
+}
+
+.products__item:nth-of-type(2) a {
+  background-image: url("/img/montage-desktop@1x.png");
+
+  @include desktop-middle {
+    background-image: url("/img/montage-tablet@1x.png");
+  }
+
+  @include phones {
+    background-image: url("/img/montage-mobile@1x.png");
+  }
+}
+
+.products__item:nth-of-type(3) a {
+  background-image: url("/img/leds-desktop@1x.png");
+
+  @include desktop-middle {
+    background-image: url("/img/leds-tablets@1x.png");
+  }
+
+  @include phones {
+    background-image: url("/img/leds-mobile@1x.png");
+  }
+}
+
+.products h3 {
+  width: 190px;
+  margin: 0;
+  font-family: $base-font;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.products__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 63px;
+  background-color: $blue;
+}
+
+.products__icon {
+  stroke: $white;
+  fill: transparent;
+}

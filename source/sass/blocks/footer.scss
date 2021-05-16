@@ -115,7 +115,7 @@
 }
 
 .footer__navigation-list,
-.footer_contacts-list {
+.footer__contacts-list {
   list-style: none;
   padding: 0;
 
@@ -147,7 +147,7 @@
 }
 
 .footer__navigation-list a,
-.footer_contacts-list li {
+.footer__contacts-list li {
   text-decoration: none;
   font-family: $alternative-font;
   font-style: normal;
@@ -209,7 +209,7 @@
 }
 
 .footer__bottom span,
-.footer__copyright_mobile {
+.footer__copyright-mobile {
   font-family: $alternative-font;
   font-weight: normal;
   font-size: 13px;
@@ -243,7 +243,7 @@
   }
 }
 
-.footer__copyright_mobile {
+.footer__copyright-mobile {
   display: none;
 
   @include tablets {

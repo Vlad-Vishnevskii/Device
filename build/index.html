@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header__wrapper container">
@@ -97,7 +99,7 @@
             Полная конфиденциальность
           </h2>
           <p>
-            По желанию клиента  мы обеспечиваем полную конфеденциальность.
+            По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
         </li>
         <li class="advantages__item">
@@ -108,7 +110,7 @@
             Персонализация стоимости
           </h2>
           <p>
-            Мы  подбираем определенную фабрику, поставщиков, вид доставки,
+            Мы подбираем определенную фабрику, поставщиков, вид доставки,
             чтобы установить ту цену, которая Вас устраивает.
           </p>
         </li>
@@ -116,9 +118,9 @@
     </section>
 
     <section class="about small-container">
-        <picture>
-          <img class="about__img" src="img/year-desktop@1x.jpg" alt="2005" width="124" height="317">
-        </picture>
+      <picture>
+        <img class="about__img" src="img/year-desktop@1x.jpg" alt="2005" width="124" height="317">
+      </picture>
       <div class="about__wrapper">
         <h2>
           О компании
@@ -131,11 +133,49 @@
           Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
           Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__ellipsis">..</span>
           <span class="about__text-hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-          Среди наших клиентов крупнейшие Производители светотехники России.</span>
+            Среди наших клиентов крупнейшие Производители светотехники России.</span>
         </p>
         <a class="about__more-button button button_blue-transparent" href="#">
           Подробнее
         </a>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products__wrapper small-container">
+        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <ul class="products__list">
+          <li class="products__item">
+            <a href="#">
+              <h3>Производство печатных плат</h3>
+              <div class="products__button">
+                <svg class="products__icon" width="6" height="9">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <h3>Монтаж печатных плат</h3>
+              <div class="products__button">
+                <svg class="products__icon" width="6" height="9">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <h3>Комплектующие для светотехники</h3>
+              <div class="products__button">
+                <svg class="products__icon" width="6" height="9">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -145,7 +185,7 @@
     <div class="footer__top">
       <div class="footer__left">
         <img class="footer__logo" src="/img/footer-logo@1x.png" alt="Service Device" width="216" height="52">
-        <span class="footer__copyright_mobile">1999-2018 SD Service Devices</span>
+        <span class="footer__copyright-mobile">1999-2018 SD Service Devices</span>
         <ul class="footer__social social-icons">
           <li>
             <svg width="27" height="27">
@@ -169,10 +209,10 @@
         <h2>
           Разделы сайта
           <label class="accordion__trigger" for="accordion-1">
-            <svg class="accordion__trigger_off" width="16" height="16">
+            <svg class="accordion__off" width="16" height="16">
               <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
             </svg>
-            <svg class="accordion__trigger_on" width="16" height="2">
+            <svg class="accordion__on" width="16" height="2">
               <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
             </svg>
           </label>
@@ -187,20 +227,20 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
-      <div class="footer__right">
+      <div class="footer__right accordion">
         <input class="accordion__input visually-hidden" type="checkbox" id="accordion-2">
         <h2>
           Наш офис
           <label class="accordion__trigger" for="accordion-2">
-            <svg class="accordion__trigger_off" width="16" height="16">
+            <svg class="accordion__off" width="16" height="16">
               <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
             </svg>
-            <svg class="accordion__trigger_on" width="16" height="2">
+            <svg class="accordion__on" width="16" height="2">
               <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
             </svg>
           </label>
         </h2>
-        <ul class="footer_contacts-list accordion__content">
+        <ul class="footer__contacts-list accordion__content">
           <li>г. Мытищи, Олимпийский проспект, д.10</li>
           <li>+7 (495) 589-40-50</li>
           <li>+7 (925) 003-87-67</li>
