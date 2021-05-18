@@ -1,0 +1,250 @@
+.feedback {
+  width: 574px;
+  color: $white;
+
+  @include tablets {
+    width: 594px;
+    padding-left: 4px;
+  }
+
+  @include phones {
+    width: 290px;
+    padding-left: 0;
+  }
+}
+
+.feedback h2 {
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 0;
+
+  @include tablets {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @include phones {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.feedback p {
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 48px;
+
+  @include tablets {
+    margin-top: 16px;
+    margin-bottom: 54px;
+  }
+
+  @include phones {
+    margin-top: 13px;
+    margin-bottom: 25px;
+  }
+}
+
+
+.feedback label:not(:last-child) {
+  display: none;
+}
+
+.feedback__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  @include phones {
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__field_name input,
+.feedback__field_phone input {
+  width: 270px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include tablets {
+    width: 278px;
+    height: 49px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @include phones {
+    width: 100%;
+    height: 52px;
+  }
+}
+
+.feedback__field_name {
+  @include phones {
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__field textarea {
+  padding: 13px 16px;
+  width: 100%;
+  height: 154px;
+
+  @include tablets {
+    padding: 12px 18px;
+    height: 161px;
+  }
+
+  @include phones {
+    height: 103px;
+  }
+}
+
+.feedback__field input,
+.feedback__field textarea {
+  border: none;
+  background-color: $white-opacity;
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  appearance: none;
+  outline: none;
+
+  &:focus {
+    border: 1px solid white;
+  }
+}
+
+.feedback__field input::placeholder,
+.feedback__field textarea::placeholder {
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  appearance: none;
+}
+
+.feedback__field__field input::-webkit-input-placeholder,
+.feedback__field__field textarea::-webkit-input-placeholder {
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  appearance: none;
+}
+
+.feedback__field__field input::-moz-placeholder,
+.feedback__field__field textarea::-moz-placeholder {
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  appearance: none;
+}
+
+.feedback__bottom-wrapper {
+  display: flex;
+  margin-top: 38px;
+
+  @include tablets {
+    margin-top: 41px;
+  }
+
+  @include phones {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+
+.feedback__button {
+  width: 270px;
+  cursor: pointer;
+  height: 45px;
+  letter-spacing: 0.5px;
+  margin-right: 71px;
+
+  @include tablets {
+    width: 282px;
+    margin-right: 72px;
+  }
+
+  @include phones {
+    width: 290px;
+    margin-bottom: 22px;
+    margin-right: 0;
+  }
+}
+
+.feedback__field_checkbox {
+  position: relative;
+  width: 190px;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+
+  @include phones {
+    padding-left: 32px;
+    width: 100%;
+  }
+}
+
+.feedback__field_checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.feedback__field_checkbox input + label::before {
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  content: "";
+  display: block;
+  border: 1px solid $white;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @include tablets {
+    top: 3px;
+  }
+
+  @include phones {
+    left: 0;
+  }
+}
+
+.feedback__field_checkbox input:hover + label::before {
+  opacity: 0.7;
+}
+
+.feedback__field_checkbox input:focus + label::before {
+  opacity: 0.7;
+}
+
+.feedback__field_checkbox input:checked + label::before {
+  background-image: url("/img/checkbox-on.png");
+}

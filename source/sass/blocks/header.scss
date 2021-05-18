@@ -61,8 +61,10 @@
 }
 
 .header__top button {
-  width: 180px;
-  letter-spacing: -1px;
+  width: 181px;
+  padding: 13px 5px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 
   @include tablets {
     display: none;
@@ -78,7 +80,6 @@
   font-size: 16px;
   line-height: 18px;
   outline: none;
-  letter-spacing: 1px;
 
   &:hover {
     opacity: 0.5;
@@ -98,7 +99,7 @@
 }
 
 .header__link_email span {
-  margin-left: 21px;
+  margin-left: 20px;
 }
 
 .header__link_phone span {
@@ -120,7 +121,7 @@
 }
 
 .header__link_email {
-  margin-right: 85px;
+  margin-right: 89px;
 
   @include tablets {
     margin-right: 32px;
@@ -132,7 +133,7 @@
 }
 
 .header__link_phone {
-  margin-right: 46px;
+  margin-right: 49px;
 
   @include tablets {
     margin-right: 0;
@@ -181,7 +182,7 @@
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: -5.2px;
+  letter-spacing: 5.5px;
   text-transform: uppercase;
   color: $white;
   margin-bottom: 0;
@@ -195,13 +196,13 @@
     font-size: 60px;
     line-height: 70px;
     text-align: left;
-    letter-spacing: -3.5px;
   }
 
   @include phones {
+    width: 277px;
     font-size: 40px;
     line-height: 47px;
-    width: 277px;
+    letter-spacing: 3.5px;
   }
 }
 
@@ -214,7 +215,6 @@
   font-size: 22px;
   line-height: 34px;
   color: $white;
-  letter-spacing: 1px;
 
   @include desktop-middle {
     text-align: center;
@@ -285,6 +285,11 @@
     opacity: 0.2;
   }
 
+  @include desktop-middle {
+    bottom: 0;
+    left: 0;
+  }
+
   @include tablets {
     display: none;
   }
@@ -310,11 +315,15 @@
   }
 }
 
-.header__info button {
+.header__link-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 404px;
   height: 55px;
-  margin-top: 21px;
-  letter-spacing: 0.4px;
+  margin-top: 45px;
+  letter-spacing: 2px;
+  text-decoration: none;
 
   @include tablets {
     width: 379px;

@@ -74,7 +74,7 @@
   min-height: 299px;
   padding-top: 35px;
   padding-left: 42px;
-  padding-right: 42px;
+  padding-right: 30px;
   padding-bottom: 35px;
   margin-bottom: 30px;
   border: 1px solid $grey-light;
@@ -131,7 +131,6 @@
   line-height: 34px;
   color: $blue;
   margin-bottom: 0;
-  letter-spacing: -1px;
 
   @include tablets {
     margin-top: 6px;
@@ -153,14 +152,13 @@
 }
 
 .advantages__item p {
-  width: 491px;
+  width: 489px;
   font-family: $alternative-font;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $grey;
   margin-top: 15px;
-  letter-spacing: 1px;
 
   @include desktop-middle {
     width: 100%;
@@ -168,7 +166,7 @@
 
   @include tablets {
     margin-top: 7px;
-    width: 301px;
+    width: 296px;
   }
 
   @include phones {

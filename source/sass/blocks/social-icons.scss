@@ -6,3 +6,13 @@
   padding: 0;
   list-style: none;
 }
+
+.social-icons a {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.2;
+  }
+}

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="modal-opened-js">
   <header class="header">
     <div class="header__wrapper container">
       <div class="header__top">
@@ -49,10 +49,10 @@
             <p>
               производство и монтаж, поставка комплектующих, блоков и модулей
             </p>
-            <button class="button button_blue-fill" type="button">
+            <a href="#" class="header__link-scroll button button_blue-fill button_scroll-js">
               <span class="button__desktop-tablet-visible">Получить бесплатную консультацию</span>
               <span class="button__mobile-visible">Бесплатная консультация</span>
-            </button>
+            </a>
           </div>
           <a class="header__link-bottom" href="">Скролл вниз</a>
         </div>
@@ -119,7 +119,7 @@
 
     <section class="about small-container">
       <picture>
-        <img class="about__img" src="img/year-desktop@1x.jpg" alt="2005" width="124" height="317">
+        <img src="img/year-desktop@1x.jpg" alt="2005" width="124" height="317">
       </picture>
       <div class="about__wrapper">
         <h2>
@@ -179,28 +179,69 @@
       </div>
     </section>
 
+    <section class="questions">
+      <div class="questions__wrapper small-container">
+        <div class="questions__img">
+          <img src="img/plane-desktop@1x.png" alt="Бумажный самолет" width="511" height="288">
+        </div>
+        <div class="questions__right feedback">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form action="https://echo.htmlacademy.ru">
+            <div class=" feedback__top-wrapper">
+              <div class="feedback__field feedback__field_name">
+                <label for="user-name">Имя</label>
+                <input id="user-name" type="text" placeholder="Имя" required="" name="user-name">
+              </div>
+              <div class="feedback__field feedback__field_phone">
+                <label for="user-phone">Номер телефона</label>
+                <input id="user-phone" type="tel" placeholder="Телефон" required="" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="number">
+              </div>
+            </div>
+            <div class="feedback__field">
+              <label for="question">Ваш вопрос</label>
+              <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="feedback__bottom-wrapper">
+              <button class="feedback__button button button_white-transparent" type="submit">Задать вопрос</button>
+              <div class="feedback__field feedback__field_checkbox">
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">Я согласен на обработку  персональных данных</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__left">
-        <img class="footer__logo" src="/img/footer-logo@1x.png" alt="Service Device" width="216" height="52">
+        <img class="footer__logo" src="img/footer-logo@1x.png" alt="Service Device" width="216" height="52">
         <span class="footer__copyright-mobile">1999-2018 SD Service Devices</span>
         <ul class="footer__social social-icons">
           <li>
-            <svg width="27" height="27">
-              <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
-            </svg>
+            <a href="#">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg width="26" height="26">
-              <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
-            </svg>
+            <a href="#">
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg width="26" height="26">
-              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-            </svg>
+            <a href="#">
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -257,8 +298,43 @@
         <span class="footer__developer">Developed by wow studio </span>
       </div>
     </div>
-
   </footer>
+
+  <div class="popup">
+    <div class="popup__modal feedback">
+      <svg width="16" height="16">
+        <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+      </svg>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form action="https://echo.htmlacademy.ru">
+        <div class="popup__top-wrapper feedback__top-wrapper">
+          <div class="popup__field feedback__field feedback__field_name">
+            <label for="user-name-popup">Имя</label>
+            <input id="user-name-popup" type="text" placeholder="Имя" required="" name="user-name">
+          </div>
+          <div class="popup__field popup__field_phone feedback__field feedback__field_phone">
+            <label for="user-phone-popup">Номер телефона</label>
+            <input id="user-phone-popup" type="tel" placeholder="Телефон" required="" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="number">
+          </div>
+        </div>
+        <div class="popup__field feedback__field">
+          <label for="question">Ваш вопрос</label>
+          <textarea name="question" id="question-popup" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="popup__bottom-wrapper feedback__bottom-wrapper">
+          <button class="feedback__button button button_white-transparent" type="submit">Отправить</button>
+          <div class="popup__field popup__field_checkbox">
+            <input type="checkbox" id="agreement-popup" name="agreement">
+            <label for="agreement-popup">Я согласен на обработку  персональных данных</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/scroll.js"></script>
+  <script src="js/focus.js"></script>
 </body>
 
 </html>

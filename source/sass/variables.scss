@@ -1,5 +1,7 @@
 // Colors
 $white: #ffffff;
+$white-opacity: rgba(255, 255, 255, 0.2);
+$white-opacity-middle: rgba(255, 255, 255, 0.8);
 $black: #000000;
 $special-black:#1b2d37;
 $blue: #00b2ff;
@@ -9,4 +11,4 @@ $grey-light: #ebebeb;
 
 //fonts
 $base-font: "Roboto Condensed", "Arial", sans-serif;
-$alternative-font: "PT Mono", monospace;
+$alternative-font: "PT Mono", "Arial", monospace;

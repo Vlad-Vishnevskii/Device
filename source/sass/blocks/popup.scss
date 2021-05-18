@@ -1,0 +1,162 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  color: $white;
+}
+
+.popup__modal {
+  position: relative;
+  width: 490px;
+  min-height: 700px;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $blue;
+
+  @include phones {
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 673px;
+  }
+}
+
+.popup_open {
+  display: flex;
+}
+
+.popup__modal svg {
+  position: absolute;
+  top: 33px;
+  right: 20px;
+}
+
+.popup h2 {
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.popup p {
+  margin-top: 18px;
+  margin-bottom: 29px;
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+.popup__top-wrapper {
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.popup__field {
+  margin-bottom: 30px;
+}
+
+.popup__field textarea {
+  margin-top: 0;
+  padding-left: 25px;
+  padding-top: 15px;
+  height: 104px;
+}
+
+.popup__field input {
+  width: 100%;
+  padding-left: 25px;
+}
+
+.popup__bottom-wrapper {
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.popup__bottom-wrapper button {
+  width: 100%;
+  margin-bottom: 34px;
+  letter-spacing: 0.5px;
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.popup__field_checkbox {
+  width: 352px;
+  padding-left: 48px;
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white-opacity-middle;
+
+  @include phones {
+    padding-left: 24px;
+    width: 100%;
+  }
+}
+
+.popup label:not(:last-child) {
+  display: none;
+}
+
+.popup__field_checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.popup__field label {
+  position: relative;
+}
+
+.popup__field_checkbox input + label::before {
+  position: absolute;
+  top: 1px;
+  left: -48px;
+  content: "";
+  display: block;
+  border: 1px solid $white;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @include tablets {
+    top: 3px;
+  }
+
+  @include phones {
+    left: -23px;
+  }
+}
+
+.popup__field_checkbox input:hover + label::before {
+  opacity: 0.7;
+}
+
+.popup__field_checkbox input:focus + label::before {
+  opacity: 0.7;
+}
+
+.popup__field_checkbox input:checked + label::before {
+  background-image: url("/img/checkbox-on.png");
+}

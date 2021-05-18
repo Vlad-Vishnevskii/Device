@@ -8,10 +8,10 @@
 }
 
 .footer__top {
-  width: 1432px;
+  width: 1468px;
   display: flex;
   padding-top: 35px;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
   margin: 0 auto;
 
   @include desktop-middle {
@@ -38,8 +38,8 @@
 
 .footer__left {
   padding-top: 11px;
-  padding-left: 5px;
-  margin-right: 209px;
+  padding-left: 25px;
+  margin-right: 207px;
 
   @include desktop-middle {
     margin-right: 0;
@@ -76,7 +76,7 @@
 
 .footer__center {
   width: 380px;
-  margin-right: 276px;
+  margin-right: 278px;
 
   @include desktop-middle {
     margin-right: 0;
@@ -86,7 +86,7 @@
   @include tablets {
     padding-top: 25px;
     padding-left: 25px;
-    margin-right: 122px;
+    margin-right: 112px;
   }
 
   @include phones {
@@ -102,14 +102,13 @@
 .footer__right {
   @include tablets {
     padding-top: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 8px;
   }
 
   @include phones {
     width: 100%;
     padding-top: 14px;
-    padding-left: 15px;
+    padding-left: 14px;
     padding-right: 17px;
   }
 }
@@ -139,7 +138,7 @@
 }
 
 .footer__navigation-list li {
-  margin-right: 80px;
+  margin-right: 74px;
 
   @include desktop-middle {
     margin-right: 30px;
@@ -156,7 +155,6 @@
   line-height: 25px;
   color: $special-black;
   opacity: 0.5;
-  letter-spacing: 1.5px;
 }
 
 .footer h2 {
@@ -164,10 +162,13 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  letter-spacing: -0.5px;
   text-transform: uppercase;
   color: $special-black;
   margin-bottom: 25px;
+
+  @include tablets {
+    letter-spacing: 1px;
+  }
 
   @include phones {
     display: flex;
@@ -178,7 +179,7 @@
 
 .footer__bottom {
   border-top: 1px solid $grey-opacity-low;
-  padding-top: 14px;
+  padding-top: 16px;
 
   @include tablets {
     padding-top: 20px;
@@ -196,8 +197,8 @@
 
   @include desktop-middle {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 28px;
+    padding-right: 35px;
     justify-content: space-between;
   }
 
@@ -220,10 +221,13 @@
 }
 
 .footer__rights {
-  margin-right: 66px;
+  margin-left: 7px;
+  margin-right: 74px;
+  letter-spacing: 0.5px;
 
   @include desktop-middle {
     margin-right: 0;
+    margin-left: 0;
   }
 
   @include tablets {
@@ -232,7 +236,8 @@
 }
 
 .footer__copyright {
-  margin-right: 156px;
+  margin-right: 143px;
+  letter-spacing: 0.5px;
 
   @include desktop-middle {
     margin-right: 0;
@@ -248,7 +253,6 @@
 
   @include tablets {
     display: block;
-    letter-spacing: 1.2px;
   }
 
   @include phones {
@@ -257,18 +261,14 @@
 }
 
 .footer__confidential {
-  margin-right: 357px;
+  margin-right: 406px;
+  letter-spacing: 0.5px;
 
   @include desktop-middle {
     margin-right: 0;
   }
 
-  @include tablets {
-    letter-spacing: -1px;
-  }
-
   @include phones {
     margin-bottom: 20px;
-    letter-spacing: 1px;
   }
 }

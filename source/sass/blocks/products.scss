@@ -2,7 +2,7 @@
   background-color: $special-black;
   color: $white;
   padding-top: 58px;
-  padding-bottom: 74px;
+  padding-bottom: 70px;
 
   @include desktop-middle {
     padding-left: 50px;
@@ -35,7 +35,6 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  letter-spacing: -2px;
   margin-bottom: 52px;
 
   @include desktop-middle {
@@ -51,7 +50,7 @@
   }
 
   @include phones {
-    width: 280px;
+    width: 282px;
     font-size: 28px;
     line-height: 39px;
     padding-left: 8px;
@@ -142,13 +141,18 @@
     background-image: url("/img/leds-tablets@1x.png");
   }
 
+  @include tablets {
+    padding-top: 52px;
+  }
+
   @include phones {
     background-image: url("/img/leds-mobile@1x.png");
+    padding-top: 32px;
   }
 }
 
 .products h3 {
-  width: 190px;
+  width: 173px;
   margin: 0;
   font-family: $base-font;
   font-weight: normal;
