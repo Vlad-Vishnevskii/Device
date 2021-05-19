@@ -18,6 +18,10 @@
   }
 }
 
+.accordion__input {
+  display: none;
+}
+
 .accordion__input:checked ~ .accordion__content {
   @include phones {
     display: block;

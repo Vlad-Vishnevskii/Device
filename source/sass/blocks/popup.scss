@@ -9,6 +9,7 @@
   height: 100vh;
   z-index: 10;
   color: $white;
+  background-color: $black-opacity;
 }
 
 .popup__modal {
@@ -37,6 +38,7 @@
   position: absolute;
   top: 33px;
   right: 20px;
+  cursor: pointer;
 }
 
 .popup h2 {

@@ -4,6 +4,10 @@
   min-height: 878px;
   overflow: hidden;
 
+  @include retina {
+    background-image: url("/img/background-desktop@2x.png");
+  }
+
   @include desktop-middle {
     padding-bottom: 100px;
   }

@@ -113,41 +113,81 @@
 .products__item:nth-of-type(1) a {
   background-image: url("/img/manufacture-desktop@1x.png");
 
+  @include retina {
+    background-image: url("/img/manufacture-desktop@2x.png");
+    background-size: cover;
+  }
+
   @include desktop-middle {
     background-image: url("/img/manufacture-tablet@1x.png");
+
+    @include retina {
+      background-image: url("/img/manufacture-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @include phones {
     background-image: url("/img/manufacture-mobile@1x.png");
+
+    @include retina {
+      background-image: url("/img/manufacture-mobile@2x.png");
+      background-size: cover;
+    }
   }
 }
 
 .products__item:nth-of-type(2) a {
   background-image: url("/img/montage-desktop@1x.png");
 
+  @include retina {
+    background-image: url("/img/montage-desktop@2x.png");
+    background-size: cover;
+  }
+
   @include desktop-middle {
     background-image: url("/img/montage-tablet@1x.png");
+
+    @include retina {
+      background-image: url("/img/montage-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @include phones {
     background-image: url("/img/montage-mobile@1x.png");
+
+    @include retina {
+      background-image: url("/img/montage-mobile@2x.png");
+      background-size: cover;
+    }
   }
 }
 
 .products__item:nth-of-type(3) a {
   background-image: url("/img/leds-desktop@1x.png");
 
-  @include desktop-middle {
-    background-image: url("/img/leds-tablets@1x.png");
+  @include retina {
+    background-image: url("/img/leds-desktop@2x.png");
+    background-size: cover;
   }
 
-  @include tablets {
-    padding-top: 52px;
+  @include desktop-middle {
+    background-image: url("/img/leds-tablets@1x.png");
+
+    @include retina {
+      background-image: url("/img/leds-tablets@2x.png");
+      background-size: cover;
+    }
   }
 
   @include phones {
     background-image: url("/img/leds-mobile@1x.png");
-    padding-top: 32px;
+
+    @include retina {
+      background-image: url("/img/leds-mobile@2x.png");
+      background-size: cover;
+    }
   }
 }
 

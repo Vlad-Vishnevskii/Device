@@ -122,9 +122,13 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: $white;
+  color: $black;
   appearance: none;
   outline: none;
+
+  &:hover {
+    border: 1px solid $white;
+  }
 
   &:focus {
     border: 1px solid white;

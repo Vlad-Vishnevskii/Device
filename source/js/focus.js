@@ -38,11 +38,17 @@
 
   function onInputKeydown(evt) {
     if (evt.keyCode === 8) {
-      this.value = openingBrackets;
+      inputPhone.value = openingBrackets;
+    }
+  }
+
+  function onInputPopupKeydown(evt) {
+    if (evt.keyCode === 8) {
+      inputPhonePopup.value = openingBrackets;
     }
   }
 
   inputPhone.addEventListener('keydown', onInputKeydown);
-  inputPhonePopup.addEventListener('keydown', onInputKeydown);
+  inputPhonePopup.addEventListener('keydown', onInputPopupKeydown);
 
 })();
