@@ -84,7 +84,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("js_min", function () {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/main.js')
     .pipe (gulp.dest("build/js"))
 });
 
