@@ -41,7 +41,7 @@
   left: -572px;
   content: "";
   display: block;
-  background-image: url("/img/big-polygon-grey@1x.png");
+  background-image: url("../img/big-polygon-grey@1x.png");
   width: 636px;
   height: 717px;
 
@@ -56,7 +56,7 @@
   right: 229px;
   content: "";
   display: block;
-  background-image: url("/img/big-polygon-grey@1x.png");
+  background-image: url("../img/big-polygon-grey@1x.png");
   width: 636px;
   height: 739px;
   transform: rotate(180deg);
@@ -84,7 +84,7 @@
   }
 
   @include phones {
-    margin-top: 29px;
+    margin-top: 34px;
   }
 }
 
@@ -119,7 +119,10 @@
   }
 
   @include phones {
+    margin-top: 2px;
     margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 39px;
   }
 }
 

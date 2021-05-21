@@ -1,11 +1,11 @@
 .header {
   background-color: $special-black;
-  background-image: url("/img/background-desktop@1x.jpg");
+  background-image: url("../img/background-desktop@1x.jpg");
   min-height: 878px;
   overflow: hidden;
 
   @include retina {
-    background-image: url("/img/background-desktop@2x.png");
+    background-image: url("../img/background-desktop@2x.png");
   }
 
   @include desktop-middle {
@@ -369,7 +369,7 @@
   display: block;
   width: 705px;
   height: 655px;
-  background-image: url("/img/microchips-desktop@1x.png");
+  background-image: url("../img/microchips-desktop@1x.png");
   z-index: 5;
 
   @include desktop-middle {
@@ -380,14 +380,14 @@
     position: absolute;
     top: -149px;
     right: -23px;
-    background-image: url("/img/microchips-tablet@1x.png");
+    background-image: url("../img/microchips-tablet@1x.png");
     background-repeat: no-repeat;
     width: 329px;
     height: 467px;
   }
 
   @include phones {
-    background-image: url("/img/microchips-mobile@1x.png");
+    background-image: url("../img/microchips-mobile@1x.png");
     background-repeat: no-repeat;
     top: -259px;
     right: -14px;
