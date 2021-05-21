@@ -22,7 +22,7 @@
   buttonToAdvantages.addEventListener('click', buttonToAdvantagesClick);
   buttonToForm.addEventListener('click', buttonToFormClick);
 
-    // focus
+  // focus
 
   var inputPhone = document.querySelector('.feedback__field_phone input');
   var inputPhonePopup = document.querySelector('.popup__field_phone input');
@@ -105,7 +105,7 @@
 
   function onEscapePress(evt) {
     if (evt.keyCode === escape) {
-      popup.classList.remove('popup_open');
+      closePopup();
     }
   }
 
@@ -125,10 +125,8 @@
 
   // localStorage
 
-  var inputPhone = document.querySelector('.feedback__field_phone input');
   var inputName = document.querySelector('.feedback__field_name input');
   var textareaQuestion = document.querySelector('.feedback__field textarea');
-  var inputPhonePopup = document.querySelector('.popup__field_phone input');
   var inputNamePopup = document.querySelector('.popup__field_name input');
   var textareaQuestionPopup = document.querySelector('.popup__field textarea');
 
