@@ -23,7 +23,7 @@
 }
 
 .header__wrapper {
-  width: 1423px;
+  width: 1420px;
 
   @include desktop-middle {
     width: 100%;
@@ -69,6 +69,7 @@
   padding: 13px 5px;
   letter-spacing: 0.5px;
   cursor: pointer;
+  margin-left: 49px;
 
   @include tablets {
     display: none;
@@ -125,32 +126,38 @@
 }
 
 .header__link_email {
-  margin-right: 89px;
+  margin-left: 40px;
 
   @include tablets {
-    margin-right: 32px;
+    margin-left: 30px;
   }
 
   @include phones {
-    margin-right: 22px;
+    margin-left: 22px;
   }
 }
 
 .header__link_phone {
-  margin-right: 49px;
+  margin-left: 89px;
 
   @include tablets {
+    margin-left: 32px;
     margin-right: 0;
+  }
+
+  @include phones {
+    margin-left: 22px;
   }
 }
 
 .header__contacts {
   display: flex;
   align-items: center;
-  width: 660px;
+  flex-wrap: wrap;
 
   @include tablets {
-    width: initial;
+    width: 70%;
+    justify-content: flex-end;
     padding-top: 12px;
   }
 
@@ -165,13 +172,12 @@
   margin-top: 172px;
 
   @include desktop-middle {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
+    padding: 0 40px;
   }
 
   @include tablets {
     align-items: flex-start;
+    padding: 0;
     margin-top: 73px;
   }
 
@@ -192,7 +198,7 @@
   margin-bottom: 0;
 
   @include desktop-middle {
-    text-align: center;
+    width: 85%;
   }
 
   @include tablets {
@@ -203,7 +209,7 @@
   }
 
   @include phones {
-    width: 277px;
+    width: 100%;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 3.5px;
@@ -221,8 +227,7 @@
   color: $white;
 
   @include desktop-middle {
-    text-align: center;
-    width: 100%;
+    width: 75%;
   }
 
   @include tablets {
@@ -233,7 +238,7 @@
   }
 
   @include phones {
-    width: 245px;
+    width: 90%;
     margin-top: 26px;
     font-size: 16px;
     margin-left: 52px;
@@ -253,7 +258,7 @@
   @include desktop-middle {
     width: 30px;
     top: 17px;
-    left: -25px;
+    left: -52px;
   }
 
   @include tablets {
@@ -303,10 +308,7 @@
   padding-left: 99px;
 
   @include desktop-middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
+    padding-left: 56px;
   }
 
   @include tablets {
@@ -331,7 +333,7 @@
 
   @include tablets {
     width: 379px;
-    margin-top: 37px;
+    margin-top: 55px;
   }
 
   @include phones {
@@ -341,10 +343,6 @@
 }
 
 .header__left {
-  @include desktop-middle {
-    order: 2;
-  }
-
   @include tablets {
     padding-left: 65px;
   }
@@ -352,12 +350,6 @@
   @include phones {
     z-index: 10;
     padding-left: 0;
-  }
-}
-
-.header__right {
-  @include desktop-middle {
-    order: 1;
   }
 }
 
@@ -373,12 +365,14 @@
   z-index: 5;
 
   @include desktop-middle {
-    position: static;
+    right: initial;
+    left: 700px;
   }
 
   @include tablets {
     position: absolute;
     top: -149px;
+    left: initial;
     right: -23px;
     background-image: url("../img/microchips-tablet@1x.png");
     background-repeat: no-repeat;

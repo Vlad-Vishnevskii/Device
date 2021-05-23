@@ -1,10 +1,15 @@
 .social-icons {
   display: flex;
-  justify-content: space-between;
-  width: 112px;
+  flex-wrap: wrap;
+  width: 90%;
   margin: 0;
+  margin-left: -16px;
   padding: 0;
   list-style: none;
+}
+
+.social-icons li {
+  margin-left: 16px;
 }
 
 .social-icons a {

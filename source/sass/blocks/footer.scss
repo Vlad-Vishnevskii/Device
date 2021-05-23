@@ -8,7 +8,7 @@
 }
 
 .footer__top {
-  width: 1468px;
+  width: 1420px;
   display: flex;
   padding-top: 35px;
   padding-bottom: 39px;
@@ -38,11 +38,11 @@
 
 .footer__left {
   padding-top: 11px;
-  padding-left: 25px;
   margin-right: 207px;
+  width: 216px;
 
   @include desktop-middle {
-    margin-right: 0;
+    margin-right: 60px;
   }
 
   @include tablets {
@@ -50,6 +50,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-right: 0;
     padding-left: 25px;
     padding-right: 22px;
     padding-bottom: 25px;
@@ -67,10 +68,12 @@
 
   @include tablets {
     margin-top: 0;
+    width: 18%;
   }
 
   @include phones {
     margin-top: 28px;
+    width: initial;
   }
 }
 
@@ -126,23 +129,40 @@
 }
 
 .footer__navigation-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 100px;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-column-gap: 60px;
 
   @include desktop-middle {
-    flex-wrap: nowrap;
-    height: initial;
+    grid-column-gap: 15px;
+    grid-template-columns: 220px 220px;
+  }
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .footer__navigation-list li {
-  margin-right: 74px;
-
   @include desktop-middle {
     margin-right: 30px;
   }
+}
+
+.footer__navigation-parts {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.footer__navigation-delivery {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.footer__navigation-contacts {
+  grid-column: 2;
+  grid-row: 3;
 }
 
 .footer__navigation-list a,
@@ -192,7 +212,8 @@
 
 .footer__bottom-wrapper {
   display: flex;
-  width: 1432px;
+  flex-wrap: wrap;
+  width: 1420px;
   position: relative;
 
   @include desktop-middle {
@@ -221,7 +242,6 @@
 }
 
 .footer__rights {
-  margin-left: 7px;
   margin-right: 74px;
   letter-spacing: 0.5px;
 

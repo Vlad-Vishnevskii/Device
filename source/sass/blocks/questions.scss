@@ -20,10 +20,9 @@
   align-items: flex-start;
 
   @include desktop-middle {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    justify-content: space-around;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   @include phones {
@@ -34,11 +33,12 @@
 
 .questions__img {
   position: relative;
-  margin-top: 69px;
   left: -24px;
+  display: block;
+  margin-top: 69px;
 
   @include desktop-middle {
-    left: 0;
+    left: -20px;
     margin-bottom: 40px;
     margin-top: 20px;
   }
@@ -59,7 +59,7 @@
   width: 373px;
   height: 387px;
 
-  @include desktop-middle {
+  @include tablets {
     display: none;
   }
 }
@@ -75,7 +75,7 @@
   width: 636px;
   height: 649px;
 
-  @include desktop-middle {
+  @include tablets {
     display: none;
   }
 }
@@ -95,7 +95,7 @@
   width: 234px;
   height: 234px;
 
-  @include desktop-middle {
+  @include tablets {
     display: none;
   }
 }
@@ -111,7 +111,7 @@
   width: 373px;
   height: 373px;
 
-  @include desktop-middle {
+  @include tablets {
     display: none;
   }
 }
