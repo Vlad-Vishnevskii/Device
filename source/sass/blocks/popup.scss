@@ -23,7 +23,7 @@
   background-color: $blue;
 
   @include phones {
-    width: 320px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     min-height: 673px;

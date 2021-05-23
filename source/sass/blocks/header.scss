@@ -64,12 +64,13 @@
   }
 }
 
-.header__top button {
+.header__button {
   width: 181px;
   padding: 13px 5px;
   letter-spacing: 0.5px;
   cursor: pointer;
   margin-left: 49px;
+  text-decoration: none;
 
   @include tablets {
     display: none;
@@ -302,6 +303,10 @@
   @include tablets {
     display: none;
   }
+}
+
+.header__link-bottom-no-js {
+  display: none;
 }
 
 .header__info {

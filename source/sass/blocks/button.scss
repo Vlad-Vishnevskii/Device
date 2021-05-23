@@ -19,6 +19,10 @@
   }
 }
 
+.button_no-js {
+  display: none;
+}
+
 .button_white-transparent {
   border: 1px solid $white;
   background-color: transparent;

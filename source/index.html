@@ -41,7 +41,7 @@
               +7 (495) 000 52 52
             </span>
           </a>
-          <button class="button button_white-transparent button-popup-js" type="button">Заказать звонок</button>
+          <a href="popup.html" class="header__button button button_white-transparent button-popup-js">Заказать звонок</a>
         </div>
       </div>
       <div class="header__bottom">
@@ -53,12 +53,12 @@
             <p>
               производство и монтаж, поставка комплектующих, блоков и модулей
             </p>
-            <a href="#" class="header__link-scroll button button_blue-fill button_scroll-js">
+            <a href="#" class="header__link-scroll button button_blue-fill button_scroll-js button_no-js">
               <span class="button__desktop-tablet-visible">Получить бесплатную консультацию</span>
               <span class="button__mobile-visible">Бесплатная консультация</span>
             </a>
           </div>
-          <a class="header__link-bottom" href="#">Скролл вниз</a>
+          <a class="header__link-bottom header__link-bottom-no-js" href="#">Скролл вниз</a>
         </div>
         <div class="header__right">
         </div>
@@ -205,7 +205,7 @@
             </div>
             <div class="feedback__field feedback__field_phone">
               <label for="user-phone">Номер телефона</label>
-              <input id="user-phone" type="tel" placeholder="Телефон" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="number">
+              <input id="user-phone" type="tel" placeholder="Телефон" minlength="16" maxlength="16" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="number">
             </div>
             <div class="feedback__field">
               <label for="question">Ваш вопрос</label>
@@ -331,10 +331,10 @@
         </div>
         <div class="popup__field popup__field_phone feedback__field feedback__field_phone">
           <label for="user-phone-popup">Номер телефона</label>
-          <input id="user-phone-popup" type="tel" placeholder="Телефон" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="number">
+          <input id="user-phone-popup" type="tel" placeholder="Телефон" minlength="16" maxlength="16" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="number">
         </div>
         <div class="popup__field feedback__field">
-          <label for="question">Ваш вопрос</label>
+          <label for="question-popup">Ваш вопрос</label>
           <textarea name="question" id="question-popup" placeholder="Ваш вопрос"></textarea>
         </div>
         <button type="submit">Отправить</button>

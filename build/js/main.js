@@ -8,6 +8,9 @@
   var buttonToForm = document.querySelector('.button_scroll-js');
   var form = document .querySelector('.questions');
 
+  buttonToAdvantages.classList.remove('header__link-bottom-no-js');
+  buttonToForm.classList.remove('button_no-js');
+
   function buttonToAdvantagesClick(evt) {
     evt.preventDefault();
     advantages.scrollIntoView({block: 'center', behavior: 'smooth'});
@@ -29,51 +32,70 @@
   var openingBrackets = '+7(';
   var closingBrackets = ')';
   var separator = '-';
+  var oldLength = 0;
+  var oldLengthPopup = 0;
 
   inputPhone.onfocus = function () {
-    inputPhone.value = openingBrackets;
+    if (oldLength <= 3) {
+      inputPhone.value = openingBrackets;
+      oldLength += inputPhone.value.length - 1;
+    }
   };
 
   inputPhonePopup.onfocus = function () {
-    inputPhonePopup.value = openingBrackets;
+    if (oldLengthPopup <= 3) {
+      inputPhonePopup.value = openingBrackets;
+      oldLengthPopup += inputPhonePopup.value.length - 1;
+    }
   };
 
   inputPhone.oninput = function () {
-    if (inputPhone.value.length === 6) {
-      inputPhone.value += closingBrackets;
+    var currentLength = inputPhone.value.length;
+
+    if (currentLength <= 3) {
+      inputPhone.value = openingBrackets;
     }
 
-    if (inputPhone.value.length === 10 || inputPhone.value.length === 13) {
+    if (currentLength < oldLength || currentLength === oldLength) {
+      oldLength--;
+      return;
+    }
+
+    if (currentLength === 6) {
+      inputPhone.value += closingBrackets;
+      oldLength = inputPhone.value.length - 1;
+    }
+
+    if (currentLength === 10 || currentLength === 13) {
       inputPhone.value += separator;
     }
+
+    oldLength++;
   };
 
   inputPhonePopup.oninput = function () {
-    if (inputPhonePopup.value.length === 6) {
-      inputPhonePopup.value += closingBrackets;
-    }
+    var currentLength = inputPhonePopup.value.length;
 
-    if (inputPhonePopup.value.length === 10 || inputPhonePopup.value.length === 13) {
-      inputPhonePopup.value += separator;
-    }
-  };
-
-
-  function onInputKeydown(evt) {
-    if (evt.keyCode === 8) {
-      inputPhone.value = openingBrackets;
-    }
-  }
-
-  function onInputPopupKeydown(evt) {
-    if (evt.keyCode === 8) {
+    if (currentLength <= 3) {
       inputPhonePopup.value = openingBrackets;
     }
-  }
 
-  inputPhone.addEventListener('keydown', onInputKeydown);
-  inputPhonePopup.addEventListener('keydown', onInputPopupKeydown);
+    if (currentLength < oldLengthPopup || currentLength === oldLengthPopup) {
+      oldLengthPopup--;
+      return;
+    }
 
+    if (currentLength === 6) {
+      inputPhonePopup.value += closingBrackets;
+      oldLengthPopup = inputPhonePopup.value.length - 1;
+    }
+
+    if (currentLength === 10 || currentLength === 13) {
+      inputPhonePopup.value += separator;
+    }
+
+    oldLengthPopup++;
+  };
 
   // popup
 
@@ -99,7 +121,8 @@
     popup.removeEventListener('click', onOverlayClick);
   }
 
-  function onButtonPopupClick() {
+  function onButtonPopupClick(evt) {
+    evt.preventDefault();
     openPopup();
   }
 
