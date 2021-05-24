@@ -147,10 +147,10 @@
 
   @include phones {
     background-image: url("../img/manufacture-mobile@1x.png");
+    background-size: cover;
 
     @include retina {
       background-image: url("../img/manufacture-mobile@2x.png");
-      background-size: cover;
     }
   }
 }
@@ -174,10 +174,10 @@
 
   @include phones {
     background-image: url("../img/montage-mobile@1x.png");
+    background-size: cover;
 
     @include retina {
       background-image: url("../img/montage-mobile@2x.png");
-      background-size: cover;
     }
   }
 }
@@ -201,10 +201,10 @@
 
   @include phones {
     background-image: url("../img/leds-mobile@1x.png");
+    background-size: cover;
 
     @include retina {
       background-image: url("../img/leds-mobile@2x.png");
-      background-size: cover;
     }
   }
 }
