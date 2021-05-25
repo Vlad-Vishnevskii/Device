@@ -42,7 +42,7 @@
   width: 216px;
 
   @include desktop-middle {
-    margin-right: 60px;
+    margin-right: 40px;
   }
 
   @include tablets {
@@ -89,7 +89,7 @@
   @include tablets {
     padding-top: 18px;
     padding-left: 25px;
-    margin-right: 112px;
+    margin-right: 142px;
   }
 
   @include phones {
@@ -99,6 +99,7 @@
     padding-top: 14px;
     padding-right: 17px;
     border-bottom: 1px solid $grey-opacity-low;
+    padding-bottom: 4px;
   }
 }
 
@@ -120,9 +121,14 @@
 .footer__contacts-list {
   list-style: none;
   padding: 0;
+  margin-top: 0;
+
+  @include tablets {
+    margin-top: 2px;
+  }
 
   @include phones {
-    margin-top: 34px;
+    margin-top: 8px;
     margin-bottom: 26px;
     width: 250px;
   }
@@ -134,19 +140,13 @@
   grid-column-gap: 60px;
 
   @include desktop-middle {
-    grid-column-gap: 15px;
-    grid-template-columns: 220px 220px;
+    grid-template-columns: 267px 267px;
+    grid-column-gap: 0;
   }
 
   @include tablets {
     display: flex;
     flex-direction: column;
-  }
-}
-
-.footer__navigation-list li {
-  @include desktop-middle {
-    margin-right: 30px;
   }
 }
 
@@ -166,15 +166,27 @@
 }
 
 .footer__navigation-list a,
-.footer__contacts-list li {
+.footer__contacts-list li,
+.footer__contacts-list a {
   text-decoration: none;
   font-family: $alternative-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-  color: $special-black;
-  opacity: 0.5;
+  color: $special-black-opacity;
+}
+
+.footer__navigation-list a,
+.footer__contacts-list a {
+  &:hover {
+    color: $special-black;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: $special-black;
+  }
 }
 
 .footer h2 {

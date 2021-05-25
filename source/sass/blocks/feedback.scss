@@ -127,6 +127,7 @@
   width: 570px;
   height: 154px;
   margin-bottom: 38px;
+  resize: none;
 
   @include desktop-middle {
     width: 430px;
@@ -159,6 +160,7 @@
   color: $black;
   appearance: none;
   outline: none;
+  border-radius: 0;
 
   &:hover {
     border: 1px solid $white;
@@ -276,6 +278,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+  cursor: pointer;
+
 
   @include tablets {
     top: 3px;

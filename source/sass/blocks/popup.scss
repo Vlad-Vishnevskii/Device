@@ -34,11 +34,23 @@
   display: flex;
 }
 
-.popup__modal svg {
+.popup__close {
   position: absolute;
-  top: 23px;
-  right: 20px;
-  cursor: pointer;
+  top: 17px;
+  right: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.2;
+  }
 }
 
 .popup h2 {
@@ -52,8 +64,8 @@
 }
 
 .popup p {
-  margin-top: 18px;
-  margin-bottom: 29px;
+  margin-top: 12px;
+  margin-bottom: 32px;
   font-family: $alternative-font;
   font-style: normal;
   font-weight: normal;
@@ -81,6 +93,7 @@
   margin-bottom: 30px;
   padding-left: 25px;
   padding-top: 15px;
+  resize: none;
 }
 
 .popup__field input {
@@ -151,6 +164,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+  cursor: pointer;
 
   @include tablets {
     top: 3px;
